@@ -39,3 +39,14 @@
 .read-the-docs {
   color: #888;
 }
+
+#editor{
+  min-width: 40vw;
+  min-height: 20vh;
+}
+
+#preview{
+  margin-top: 5vh;
+  min-width: 40vw;
+  min-height: 20vh;
+}
