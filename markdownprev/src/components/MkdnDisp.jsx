@@ -16,7 +16,7 @@ function MkdnDisp() {
 
   return (
     <div id="preview-container">
-      <div id="preview-title">Preview</div>
+      <div class="title">Preview</div>
       <div id="preview" dangerouslySetInnerHTML={{__html: parsed}}></div>     
     </div>
   )

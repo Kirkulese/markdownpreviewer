@@ -7,9 +7,58 @@ onyx #393e41 */
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin-left:auto;
+  margin-right: auto;
 }
+
+.title {
+  padding-left: 10px;
+  background-color: #f6f7eb;
+  border: 2px solid;
+  border-color: #393e41;
+  color: #393e41;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+#preview-container {
+  margin-top: 35px;
+  max-width: 1280px;
+  
+}
+
+#editor-container {
+  margin-top: 50px;
+  max-width: 1280px;
+}
+
+#preview {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+  background-color: #f6f7eb ;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#editor{
+  width: 1270px;
+  min-height: 20vh;
+}
+
+/* #preview{
+  margin-top: 5vh;
+  min-width: 40vw;
+  min-height: 20vh;
+  max-width: 50vw;
+} */
+
+
+
+/* styling for markdown */
+
 img {
   max-width:100%;
 }
@@ -20,30 +69,10 @@ blockquote {
   background-color: #c3c1c3;
 }
 
-#preview-container {
-  padding-top: 10px;
-  
-}
-#preview-title {
-  padding: 0px;
-  margin: 0px;
-  background-color: #604f61;
-  color: #f6f7eb;
-}
 
-#preview {
-  background-color: #f6f7eb ;
-  text-align: left;
-  padding: 0px;
-  margin: 0px;
-}
 pre {
   background-color: #604f61;
   margin: 2%;
-}
-
-.card {
-  padding: 2em;
 }
 
 code {
@@ -57,21 +86,6 @@ table, td, th {
   border: 1px solid;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
-#editor{
-  width: 50vw;
-  min-height: 20vh;
-}
-
-#preview{
-  margin-top: 5vh;
-  min-width: 40vw;
-  min-height: 20vh;
-  max-width: 50vw;
-}
 
 .img{
   max-width: 50vw;

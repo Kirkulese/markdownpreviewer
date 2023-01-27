@@ -20,8 +20,8 @@ function MkdnEntry() {
 
 
   return (
-    <div className="editor-container">
-      <div id="editor-title">Editor</div>
+    <div id="editor-container">
+      <div class="title">Editor</div>
       <form onChange={mkdnHandler}>
           <textarea id="editor" onChange={(e) => setText(e.target.value)} value={text}></textarea>
       </form>
