@@ -5,16 +5,19 @@ import { marked } from 'marked';
 
 function MkdnDisp() {
 
+  marked.setOptions({
+    gfm: true,
+    breaks: true,
+  });
+
   const markdown = useSelector((state) => state.markdown)
 
   let parsed = marked.parse(markdown)
 
   return (
-    <div>
-      <div id="preview" dangerouslySetInnerHTML={{__html: parsed}}>
-      </div>
-      
-      
+    <div id="preview-container">
+      <div id="preview-title">Preview</div>
+      <div id="preview" dangerouslySetInnerHTML={{__html: parsed}}></div>     
     </div>
   )
 }
