@@ -8,7 +8,7 @@ function MkdnEntry() {
   // useEffect to update local state from redux state
   useEffect(() => {
     setText(markdown)
-  })
+  }, [])
   
 
   const dispatch = useDispatch()
@@ -22,7 +22,7 @@ function MkdnEntry() {
   return (
     <div id="editor-container">
       <div class="title">Editor</div>
-      <form onChange={mkdnHandler}>
+      <form onKeyUp={mkdnHandler}>
           <textarea id="editor" onChange={(e) => setText(e.target.value)} value={text}></textarea>
       </form>
     </div>
